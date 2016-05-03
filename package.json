@@ -1,0 +1,23 @@
+{
+  "name": "m.bypro.com.cn",
+  "version": "0.0.1",
+  "description": "mobile site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v8xm/m.bypro.com.cn.git"
+  },
+  "keywords": [
+    "ui",
+    "mobile"
+  ],
+  "author": "bypro-v8xm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/v8xm/m.bypro.com.cn/issues"
+  },
+  "homepage": "https://github.com/v8xm/m.bypro.com.cn#readme"
+}
