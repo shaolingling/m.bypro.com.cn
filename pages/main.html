@@ -3,12 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <title>主页</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <meta content="yes" name="apple-mobile-web-app-capable"/>
     <meta content="yes" name="apple-touch-fullscreen"/>
-</head>
-<body>
+    
+    <style>
+        body {
+            margin:0; padding:0;
+        }
+        header {
+            width:100%; height: 4.375rem;
+        }
+         header ul
+		   {
+		       padding: 0px;	
+		       margin: 0px;
+		       text-align: center;
+		   }
+		   
+			header li
+			{
+			   list-style-type: none;
+			   display: inline-block;
+			}
+			
+			.floatleft
+			{
+			   float: left;
+			   margin-left:2%;
+			   margin-top:0.625rem;
+               text-align:center;
+			}
 
+        .float {
+            float:
+        }
+			.floatright
+			{
+				float:right;
+				margin-right:2%;
+				margin-top:0.625rem;
+			}
+
+        .banner img{width:100%;
+        }
+        .list ,.list2,.list3{
+            width:100%;
+        }
+
+         .list1 img, .list2 img {
+           display:inline-block;margin-left:2%; width:47%;
+        }
+        .list1 {
+            margin-top:1.125rem;
+        }
+       
+        .list2 {
+            margin-top:0.75rem;
+        }
+
+         .list3 img {
+          display:inline-block;margin-left:2%; width:22.5%;
+        }
+        .list3 {
+            margin-top:0.75rem;
+        }
+        .hothouse {
+            width:96%;  margin:0 auto; margin-top:2.8125rem;
+        }
+       h1{
+            margin-left:2%; color:#999999;
+        }
+        .hothouse1 {background:#f0f0f0; height:2.75rem; 
+                    border-radius:0.25rem; line-height:2.75rem;
+                    margin-bottom:0.0625rem;
+        
+        }
+        .hothouse2 {background:#f0f0f0; height:16.0625rem;
+                    border-radius:0.25rem;
+
+        }
+        .hothouse3,.hothouse4{display:inline-block;margin-left:2%; font-size:1.5rem;
+                               width:47%; margin-top:2.1875rem; position:relative;
+
+        }
+            .hothouse3 img, .hothouse4 img {width:100%;
+            }
+        .hothouse2 span {
+            position:absolute; top:7rem; left:0.5rem; color:#fff; 
+        }
+
+        .seeagain {
+            width:96%;  margin:0 auto; margin-top:2.8125rem;
+        }
+        .seeagain1 {background:#f0f0f0; height:2.75rem;
+                     border-radius:0.25rem; line-height:2.75rem;
+                     margin-bottom:0.0625rem;
+        
+        }
+        .seeagain2{background:#f0f0f0; height:16.0625rem;border-radius:0.25rem; 
+
+        }
+        .seeagain2 img {display:inline-block;margin-left:2%;
+                         width:47%; margin-top:2.1875rem;
+
+        }
+
+        .likegess { width:96%;  margin:0 auto; margin-top:0.75rem;
+
+        }
+         .likegess1{background:#f0f0f0; height:2.75rem;
+                    border-radius:0.25rem; line-height:2.75rem;
+                    margin-bottom:0.0625rem;
+
+        }
+        .likegess2 {
+            height:7.625rem; background:#f0f0f0;border-radius:0.25rem;
+            margin-bottom:0.0625rem; text-align:center;
+        }
+        .likegess2 img{display:inline-block; width:24%;
+                      margin-left:2%; margin-top:0.855rem; float:left;
+            }
+
+        .likegesslenth {
+            margin-right:2%;  float:right; width:65%; 
+            margin-left:5%;padding-top:1.375rem;  height:5rem;
+        }
+        .spanleft{
+            float:left; font-size:1.875rem; color:#444444;
+        }
+         .spanright {
+            float:right;font-size:1.875rem; color:#e7380d;
+        }
+        .likegesslenth p {
+             float:left; font-size:1.5rem; color:#b8b7b7;
+        }
+
+        .likegess2 button {
+            width:80%; height:4.375rem; text-align:center; margin-top:1.675rem;
+            background:#fff; border:1px solid #c6c6c6; border-radius:0.5125rem;
+            font-size:1.75rem; color:#a8a8a8;  line-height:4.375rem;
+        }
+		</style>
+
+    <script>
+
+        var pixelRatio = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />')
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 40 + 'px';
+
+
+        function windowResize() {
+            var html = document.getElementsByTagName('html')[0];
+            var pageWidth = html.getBoundingClientRect().width;
+            html.style.fontSize = pageWidth / 40+ 'px';
+        }
+
+        $(window).resize(function () {
+            windowResize();
+        })
+    </script>
+	</head>
+	<body>
+       
+		<header>
+			<ul>
+				<li class="floatleft">
+					<img src="../images/weizhi-icon.png" /><span>上海</span>
+				</li>
+				<li class="float">
+					<img src="../images/logo-icon.png" />
+				</li>
+				<li class="floatright">
+					<img src="../images/search-icon.png" />
+				</li>
+			</ul>
+		</header>
+
+        <div class="banner"><img src="../images/banner01.png"/></div>
+       
+        <div class="biglist">
+        <div class="list1">
+            <img  src="../images/list1-1.png"/><img src="../images/list1-2.png"/>
+        </div>
+        <div class="list2">
+            <img  src="../images/list2-1.png"/><img  src="../images/list2-2.png"/>
+        </div>
+        
+        <div class="list3">
+            <img src="../images/list3-1.png"/><img src="../images/list3-2.png"/><img src="../images/list3-3.png"/><img  src="../images/list3-4.png"/>
+        </div>
+            </div>
+
+
+        <div class="hothouse">
+            <div class="hothouse1"><h1>热门房源</h1></div>
+            <div class="hothouse2">
+                   <div class="hothouse3"><img src="../images/hotpic1.png"/><span>丰舍西苑[曹路]</span></div>
+                   <div class="hothouse4"><img src="../images/hotpic2.png"/><span>绿地领海[上大]</span></div>
+
+            </div>
+        </div>
+
+           <div class="hothouse">
+            <div class="hothouse1"><h1>浏览过的</h1></div>
+            <div class="hothouse2">
+                   <div class="hothouse3"><img src="../images/seeagain1.png"/><span>丰舍西苑[曹路]</span></div>
+                   <div class="hothouse4"><img src="../images/seeagain2.png"><span>绿地领海[上大]</span></div>
+
+            </div>
+        </div>
+
+        <div class="likegess">
+            <div class="likegess1"><h1>猜你喜欢</h1></div>
+            <div class="likegess2">
+                <div><img src="../images/likegess.png"/></div>
+                 <div class="likegesslenth">
+                     <div><span class="spanleft">宝业万华城</span><span class="spanright">17500/平</span></div>
+                     <p>楼盘地址：浦东宣黄公路2585弄</p>
+                 </div>
+                
+            </div>
+
+
+              <div class="likegess2">
+                <div><img src="../images/likegess.png"/></div>
+                 <div class="likegesslenth">
+                     <div><span class="spanleft">宝业万华城</span><span class="spanright">17500/平</span></div>
+                     <p>楼盘地址：浦东宣黄公路2585弄</p>
+                 </div>
+                
+            </div>
+
+              <div class="likegess2">
+                <div><img src="../images/likegess.png"/></div>
+                 <div class="likegesslenth">
+                     <div><span class="spanleft">宝业万华城</span><span class="spanright">17500/平</span></div>
+                     <p>楼盘地址：浦东宣黄公路2585弄</p>
+                 </div>
+                
+            </div>
+              <div class="likegess2">
+                <div><img src="../images/likegess.png"/></div>
+                 <div class="likegesslenth">
+                     <div><span class="spanleft">宝业万华城</span><span class="spanright">17500/平</span></div>
+                     <p>楼盘地址：浦东宣黄公路2585弄</p>
+                 </div>
+                
+            </div>
+              <div class="likegess2">
+                <div><img src="../images/likegess.png"/></div>
+                 <div class="likegesslenth">
+                     <div><span class="spanleft">宝业万华城</span><span class="spanright">17500/平</span></div>
+                     <p>楼盘地址：浦东宣黄公路2585弄</p>
+                 </div>
+                
+            </div>
+
+            <div class="likegess2">
+                <button>查看更多</button>
+                
+            </div>
+            </div>
+
+
+
+
+           
+
+
+           
+
+           
 </body>
 </html>
