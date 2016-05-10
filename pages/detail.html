@@ -1,10 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>房源详情</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" href="../less/public.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+
+    <style>
+        .list-block {
+            margin: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
 
+
+<div class="page-group">
+
+    <div class="page  page-current">
+        <header class="bar bar-nav">
+            <a href="main.html" class="logo">
+                <img src="../images/logo-icon.png" alt="">
+            </a>
+            <div class="pull-right">
+                <i class="iconfont">
+                    &#xe600;
+                </i>
+                <i class="iconfont open-panel panel-right">
+                    &#xe601;
+                </i>
+            </div>
+        </header>
+        <div class="content">
+            <!-- Slider -->
+            <div class="swiper-container" data-space-between='10'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img
+                            src="../images/details/ba7cd232-9475-4c23-8381-cf68230941ac.jpg.600x450.jpg"
+                            alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="../images/details/rBAF6lcYNJaAUIUmAAQbUCUz1ls480.jpg.600x450.jpg"
+                            alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="../images/details/rBAF7FcYNJqAI05TAAOVUkKdsy8412.jpg.600x450.jpg"
+                            alt=""></div>
+                    <div class="swiper-slide"><img
+                            src="../images/details/rBAF6lcYNJiAVedAAAOC0Syu4UU063.jpg.600x450.jpg"
+                            alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--弹出元素-->
+    <div class="panel panel-right panel-reveal main-page">
+        <div class="content-block">
+            <img class="user-pic" src="../images/broker_pic1.png" alt="">
+            <p><a href="">二手房</a></p>
+            <p><a href="">租房</a></p>
+            <p><a href="">房屋委托</a></p>
+            <p><a href="">个人中心</a></p>
+            <!-- Click on link with "close-panel" class will close panel -->
+            <p><a href="#" class="close-panel">关闭</a></p>
+        </div>
+    </div>
+</div>
+    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script>
+        $(function() {
+            var config={
+                direction: 'horizontal',
+                loop: true
+
+            }
+            $(".swiper-container").swiper(config);
+        });
+    </script>
 </body>
 </html>

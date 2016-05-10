@@ -1,129 +1,207 @@
 <!DOCTYPE html>
-<html lang="en" style="font-size: 100%;">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>主页</title>
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <meta content="yes" name="apple-mobile-web-app-capable"/>
-    <meta content="yes" name="apple-touch-fullscreen"/>
-    <script src="../js/init.js"></script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <link rel="stylesheet" href="../css/main.css">
-
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
     <link rel="stylesheet" href="../less/public.css">
+</head>
+<body>
 
-	</head>
-	<body>
-       
-		<header>
-			<ul>
-				<li class="floatleft">
-					<img src="../images/weizhi-icon.png" /><span>上海</span>
-				</li>
-				<li class="float">
-					<img src="../images/logo-icon.png" />
-				</li>
-				<li class="floatright">
-					<img src="../images/search-icon.png" />
-				</li>
-			</ul>
-		</header>
 
-        <div class="banner"><img src="../images/banner01.png"/></div>
-       
-        <div class="biglist">
-        <div class="list1">
-            <img  src="../images/list1-1.png"/><img src="../images/list1-2.png"/>
-        </div>
-        <div class="list2">
-            <img  src="../images/list2-1.png"/><img  src="../images/list2-2.png"/>
-        </div>
-        
-        <div class="list3">
-            <img src="../images/list3-1.png"/><img src="../images/list3-2.png"/><img src="../images/list3-3.png"/><img  src="../images/list3-4.png"/>
-        </div>
+<div class="page-group">
+
+    <div class="page  page-current">
+        <!--首页标题栏-->
+        <header class="bar bar-nav">
+            <a href="main.html" class="logo">
+                <img src="../images/logo-icon.png" alt="">
+            </a>
+
+            <div class="pull-right">
+                <i class="iconfont">
+                    &#xe600;
+                </i>
+                <i class="iconfont open-panel panel-right">
+                    &#xe601;
+                </i>
             </div>
-
-
-        <div class="hothouse">
-            <div class="hothouse1"><h1>热门房源</h1></div>
-            <div class="hothouse2">
-                   <div class="hothouse3"><img src="../images/hotpic1.png"/><span>丰舍西苑[曹路]</span></div>
-                   <div class="hothouse4"><img src="../images/hotpic2.png"/><span>绿地领海[上大]</span></div>
-
-            </div>
+        </header>
+        <div class="content">
+        <div class="banner">
+            <img src="../images/main/00首页_02.jpg" alt="">
         </div>
 
-           <div class="hothouse">
-            <div class="hothouse1"><h1>浏览过的</h1></div>
-            <div class="hothouse2">
-                   <div class="hothouse3"><img src="../images/seeagain1.png"/><span>丰舍西苑[曹路]</span></div>
-                   <div class="hothouse4"><img src="../images/seeagain2.png"><span>绿地领海[上大]</span></div>
-
+            <!--搜索栏-->
+            <div class="searchbar">
+                <a class="searchbar-cancel">取消</a>
+                <div class="search-input">
+                    <label class="icon icon-search" for="search"></label>
+                    <input type="search" id='search' placeholder='输入关键字...'/>
+                </div>
             </div>
+
+        <!--磁铁式图标-->
+        <div class="links-wrap">
+            <div class="hor-view">
+                <a href="list.html" class="large-icon ershoufang">
+                    <strong>二手房</strong>
+                </a>
+                <a href="list.html" class="large-icon xinfang">
+                    <strong>新房</strong>
+                </a>
+            </div>
+            <div class="hor-view">
+                <a href="list.html" class="large-icon zufang">
+                    <strong>租房</strong>
+                </a>
+                <a href="list.html" class="large-icon ditu">
+                    <strong>地图</strong>
+                </a>
+            </div>
+
         </div>
 
-        <div class="likegess">
-            <div class="likegess1"><h1>猜你喜欢</h1></div>
-            <div class="likegess2">
-                <div><img src="../images/likegess.png"/></div>
-                 <div class="likegesslenth">
-                     <div><span class="spanleft">宝业万华城</span><span class="spanright">17500/平</span></div>
-                     <p>楼盘地址：浦东宣黄公路2585弄</p>
-                 </div>
-                
+        <!--流行图标-->
+        <div class="s-links-wrap">
+
+            <a href="list.html" class="cirLinks">
+                <p class="menu-ershou"></p>
+                <p>二手房</p>
+            </a>
+
+            <a href="list.html" class="cirLinks">
+                <p class="menu-xinfang"></p>
+                <p>新房</p>
+            </a>
+
+            <a href="list.html" class="cirLinks">
+                <p class="menu-zufang"></p>
+                <p>租房</p>
+            </a>
+
+            <a href="list.html" class="cirLinks">
+                <p class="menu-ditu"></p>
+                <p>地图</p>
+            </a>
+
+
+        </div>
+
+        <!--WRAP 列表版-->
+        <div class="hot-property">
+            <div class="content-block-title">热门房源</div>
+            <div class="list-block media-list">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="../images/main/hotpic1.png" style='width: 5rem;'></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">丰舍西苑[曹路]</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="../images/main/hotpic1.png" style='width: 5rem;'></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">丰舍西苑[曹路]</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><img src="../images/main/hotpic1.png" style='width: 5rem;'></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">丰舍西苑[曹路]</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <div class="recent">
+                <div class="content-block-title">最近浏览</div>
+                <div class="list-block media-list">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><img src="../images/main/hotpic1.png" style='width: 5rem;'></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">丰舍西苑[曹路]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><img src="../images/main/hotpic1.png" style='width: 5rem;'></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">丰舍西苑[曹路]</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><img src="../images/main/hotpic1.png" style='width: 5rem;'></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">丰舍西苑[曹路]</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
+<footer>
 
-              <div class="likegess2">
-                <div><img src="../images/likegess.png"/></div>
-                 <div class="likegesslenth">
-                     <div><span class="spanleft">宝业万华城</span><span class="spanright">17500/平</span></div>
-                     <p>楼盘地址：浦东宣黄公路2585弄</p>
-                 </div>
-                
-            </div>
+</footer>
 
-              <div class="likegess2">
-                <div><img src="../images/likegess.png"/></div>
-                 <div class="likegesslenth">
-                     <div><span class="spanleft">宝业万华城</span><span class="spanright">17500/平</span></div>
-                     <p>楼盘地址：浦东宣黄公路2585弄</p>
-                 </div>
-                
-            </div>
-              <div class="likegess2">
-                <div><img src="../images/likegess.png"/></div>
-                 <div class="likegesslenth">
-                     <div><span class="spanleft">宝业万华城</span><span class="spanright">17500/平</span></div>
-                     <p>楼盘地址：浦东宣黄公路2585弄</p>
-                 </div>
-                
-            </div>
-              <div class="likegess2">
-                <div><img src="../images/likegess.png"/></div>
-                 <div class="likegesslenth">
-                     <div><span class="spanleft">宝业万华城</span><span class="spanright">17500/平</span></div>
-                     <p>楼盘地址：浦东宣黄公路2585弄</p>
-                 </div>
-                
-            </div>
-
-            <div class="likegess2">
-                <button>查看更多</button>
-                
-            </div>
-            </div>
+        </div>
+    </div>
 
 
 
 
-           
+</div>
+<!--弹出元素-->
+<div class="panel panel-right panel-reveal main-page">
+    <div class="content-block">
+        <img class="user-pic" src="../images/broker_pic1.png" alt="">
+        <p><a href="">二手房</a></p>
+        <p><a href="">租房</a></p>
+        <p><a href="">房屋委托</a></p>
+        <p><a href="">个人中心</a></p>
+        <!-- Click on link with "close-panel" class will close panel -->
+        <p><a href="#" class="close-panel">关闭</a></p>
+    </div>
+</div>
 
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
 
-           
-
-           
 </body>
 </html>
