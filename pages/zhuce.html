@@ -13,6 +13,51 @@
     <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
     <link rel="stylesheet" href="../less/customize.sui.css">
     <link rel="stylesheet" href="../less/_public.css">
+     <style type="text/css">
+
+         body{
+             font-size: .75rem;
+         }
+         input{
+             font-size: .75rem !important;
+         }
+         .send{
+             position: absolute;
+             top: .2rem;
+             right: 0;
+             border: solid 1px #ccc;
+             padding: .35rem .6rem;
+             font-size: .6rem;
+             color: #000;
+         }
+         .list-block {
+             margin:0;
+         }
+         .button.button-big{
+             height: 1.5rem;
+             font-size: .75rem;
+
+        }
+         .button.button-big.button-fill {
+             line-height: 1.5rem;
+         }
+         .button-danger.button-fill {
+             background-color: #e8390e;
+         }
+
+         .msg{
+             line-height: 2.4rem;
+             color:#000;
+             font-size:.6rem;
+         }
+         .login{
+             color:#e8390e;
+         }
+         .msg-r{
+             float:right;
+         }
+
+     </style>
 </head>
 <body>
 
@@ -39,20 +84,10 @@
                 <div class="item-content">
                     <div class="item-media"><i class="icon icon-form-name"></i></div>
                     <div class="item-inner">
-                        <div class="item-title label">注册</div>
-                        <!--<div class="item-input">-->
-                            <!--<input type="text" placeholder="Your name">-->
-                        <!--</div>-->
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="item-content">
-                    <div class="item-media"><i class="icon icon-form-name"></i></div>
-                    <div class="item-inner">
-                        <div class="item-title label">姓名</div>
-                        <div class="item-input">
-                            <input type="text" placeholder="Your name">
+
+                        <div class="item-input" style="position: relative;">
+                            <input type="text" placeholder="请输入手机号"   >
+                            <div class="send">发送验证码 </div>
                         </div>
                     </div>
                 </div>
@@ -61,9 +96,9 @@
                 <div class="item-content">
                     <div class="item-media"><i class="icon icon-form-email"></i></div>
                     <div class="item-inner">
-                        <div class="item-title label">邮箱</div>
+
                         <div class="item-input">
-                            <input type="email" placeholder="E-mail">
+                            <input type="email" placeholder="请输入短信验证码">
                         </div>
                     </div>
                 </div>
@@ -72,73 +107,28 @@
                 <div class="item-content">
                     <div class="item-media"><i class="icon icon-form-password"></i></div>
                     <div class="item-inner">
-                        <div class="item-title label">密码</div>
+
                         <div class="item-input">
-                            <input type="password" placeholder="Password" class="">
+                            <input type="password" placeholder="请输入登录密码" class="">
                         </div>
                     </div>
                 </div>
             </li>
-            <li>
-                <div class="item-content">
-                    <div class="item-media"><i class="icon icon-form-gender"></i></div>
-                    <div class="item-inner">
-                        <div class="item-title label">性别</div>
-                        <div class="item-input">
-                            <select>
-                                <option>Male</option>
-                                <option>Female</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!-- Date -->
-            <li>
-                <div class="item-content">
-                    <div class="item-media"><i class="icon icon-form-calendar"></i></div>
-                    <div class="item-inner">
-                        <div class="item-title label">生日</div>
-                        <div class="item-input">
-                            <input type="date" placeholder="Birth day" value="2014-04-30">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!-- Switch (Checkbox) -->
-            <li>
-                <div class="item-content">
-                    <div class="item-media"><i class="icon icon-form-toggle"></i></div>
-                    <div class="item-inner">
-                        <div class="item-title label">开关</div>
-                        <div class="item-input">
-                            <label class="label-switch">
-                                <input type="checkbox">
-                                <div class="checkbox"></div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="align-top">
-                <div class="item-content">
-                    <div class="item-media"><i class="icon icon-form-comment"></i></div>
-                    <div class="item-inner">
-                        <div class="item-title label">文本域</div>
-                        <div class="item-input">
-                            <textarea></textarea>
-                        </div>
-                    </div>
-                </div>
-            </li>
+
         </ul>
     </div>
-    <div class="content-block">
+    <div class="content-block" style="margin:0;">
         <div class="row">
-            <div class="col-50"><a href="#" class="button button-big button-fill button-danger">取消</a></div>
-            <div class="col-50"><a href="#" class="button button-big button-fill button-success">提交</a></div>
+            <div class="col-100"><a href="#" class="button button-big button-fill button-danger">立即注册</a></div>
+        </div>
+
+        <div class="row msg">
+            <div class="col-100">已有宝原账号？<span class="login">立即登录</span><span class="msg-r">忘记密码</span>
+            </div>
         </div>
     </div>
+
+
 </div>
 
 <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
