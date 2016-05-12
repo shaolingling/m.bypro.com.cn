@@ -13,6 +13,11 @@
   font-style: normal;
 }
 
+h1,h2,h3,h4,h5,h6{
+  margin:0 !important;
+  font-weight:700 !important;
+}
+
 p {
   padding: 0;
   margin: 0;
@@ -189,12 +194,99 @@ p {
   }
 }
 
+
 footer {
   background: #828285;
   overflow: hidden;
 
   img{
     width:100%;
+  }
+}
+
+//房源列表页
+.list-wrap{
+
+  .list-item{
+    overflow: hidden;
+    padding:12/@rem 10/@rem 15/@rem ;
+    border-bottom:1px dashed #d7d7d7;
+    a{
+      font-size:10/@rem;
+      color:#999;
+      font-family:'Microsoft Yahei';
+      display: block;
+      .left{
+        float: left;
+        margin-right:10/@rem;
+        width:100/@rem;
+        height:75/@rem;
+        img{
+          width:100%;
+          height:100%;
+        }
+      }
+      p:nth-of-type(1){
+        font-size:14/@rem;
+        font-weight:700;
+        color: #222;
+      }
+      p{
+        position: relative;
+        .price{
+          position: absolute;
+          right: 0;
+          font-size:16/@rem;
+          font-weight:bold;
+          color: #e7380d;
+        }
+      }
+      p:last-of-type{
+        span{
+          border:1px solid pink;
+          -webkit-border-radius:3px;
+          -moz-border-radius:3px;
+          border-radius:3px;
+          padding:2px;
+        }
+        .maner{
+          color: #049c6f;
+          border-color:#049c6f ;
+        }
+        .yaoshi{
+          color: #712096;
+          border-color:#712096 ;
+        }
+        .ditie{
+          color: #ec4731;
+          border-color:#ec4731 ;
+        }
+      }
+    }
+  }
+
+}
+
+//房源详情页
+#info-wrap{
+  background: #ffffff;
+  font-size:12/@rem;
+  padding:10/@rem;
+  outline: 1px solid #e3e3e3;
+  margin-bottom:15/@rem;
+  .row{
+    border-bottom:1px solid #f0f0f0;
+    line-height: 32/@rem;
+  }
+}
+.decription-info{
+  background: #ffffff;
+  font-size:12/@rem;
+  padding:10/@rem;
+  outline: 1px solid #e3e3e3;
+  margin-bottom:15/@rem;
+  p:nth-of-type(odd){
+    color: #f26539;
   }
 }
 
