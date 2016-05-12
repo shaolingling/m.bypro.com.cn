@@ -1,0 +1,61 @@
+.list-wrap{
+
+  .list-item{
+    overflow: hidden;
+    padding:12/@rem 10/@rem 15/@rem ;
+    border-bottom:1px dashed #d7d7d7;
+    a{
+      font-size:10/@rem;
+      color:#999;
+      font-family:'Microsoft Yahei';
+      display: block;
+      .left{
+        float: left;
+        margin-right:10/@rem;
+        width:100/@rem;
+        height:75/@rem;
+        img{
+          width:100%;
+          height:100%;
+        }
+      }
+      p:nth-of-type(1){
+        font-size:14/@rem;
+        font-weight:700;
+        color: #222;
+      }
+      p{
+        position: relative;
+        .price{
+          position: absolute;
+          right: 0;
+          font-size:16/@rem;
+          font-weight:bold;
+          color: #e7380d;
+        }
+      }
+      p:last-of-type{
+        span{
+          border:1px solid pink;
+          -webkit-border-radius:3px;
+          -moz-border-radius:3px;
+          border-radius:3px;
+          padding:2px;
+        }
+        .maner{
+          color: #049c6f;
+          border-color:#049c6f ;
+        }
+        .yaoshi{
+          color: #712096;
+          border-color:#712096 ;
+        }
+        .ditie{
+          color: #ec4731;
+          border-color:#ec4731 ;
+        }
+      }
+    }
+  }
+
+}

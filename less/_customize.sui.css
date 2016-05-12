@@ -1,0 +1,15 @@
+.list-block {
+  margin: 14px 0;
+}
+.item-content {
+  padding-left: 0.5rem !important;
+}
+.item-content .item-inner {
+  margin-left: 0.5rem !important;
+}
+.item-content .item-inner .item-text {
+  height: 1rem;
+}
+.searchbar {
+  padding: 0.4rem 0.25rem !important;
+}
