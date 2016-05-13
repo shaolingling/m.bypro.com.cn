@@ -10,7 +10,6 @@
   font-family: "iconfont";
   font-size: 1.1rem;
   font-style: normal;
-  color: #fff;
 }
 h1,
 h2,
@@ -312,6 +311,53 @@ footer img {
 }
 #broker-nav .other-icon {
   width: 1.8rem;
+  float: right;
+  height: 100%;
+}
+#broker-nav .other-icon p {
+  height: 50%;
+  color: #fff;
+}
+#broker-nav .other-icon p:nth-of-type(even) {
+  position: relative;
+  font-size: 0.6rem;
+  bottom: 0.3rem;
+}
+/* 注册页 */
+#register input {
+  font-size: .75rem !important;
+}
+#register .send {
+  position: absolute;
+  top: .2rem;
+  right: 0;
+  border: solid 1px #ccc;
+  padding: .35rem .6rem;
+  font-size: .6rem;
+  color: #000;
+}
+#register .list-block {
+  margin: 0;
+}
+#register .button.button-big {
+  height: 1.5rem;
+  font-size: .75rem;
+}
+#register .button.button-big.button-fill {
+  line-height: 1.5rem;
+}
+#register .button-danger.button-fill {
+  background-color: #e8390e;
+}
+#register .msg {
+  line-height: 2.4rem;
+  color: #000;
+  font-size: .6rem;
+}
+#register .login {
+  color: #e8390e;
+}
+#register .msg-r {
   float: right;
 }
 /* 弹出元素 */

@@ -9,52 +9,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+    <link rel="stylesheet" href="../sui/dist/css/sm.css">
+    <link rel="stylesheet" href="../sui/dist/css/sm-extend.css">
+    <link rel="stylesheet" href="../less/main.css">
 
-     <style type="text/css">
-
-         body{
-             font-size: .75rem;
-         }
-         input{
-             font-size: .75rem !important;
-         }
-         .send{
-             position: absolute;
-             top: .2rem;
-             right: 0;
-             border: solid 1px #ccc;
-             padding: .35rem .6rem;
-             font-size: .6rem;
-             color: #000;
-         }
-         .list-block {
-             margin:0;
-         }
-         .button.button-big{
-             height: 1.5rem;
-             font-size: .75rem;
-
-        }
-         .button.button-big.button-fill {
-             line-height: 1.5rem;
-         }
-         .button-danger.button-fill {
-             background-color: #e8390e;
-         }
-
-         .msg{
-             line-height: 2.4rem;
-             color:#000;
-             font-size:.6rem;
-         }
-         .login{
-             color:#e8390e;
-         }
-         .msg-r{
-             float:right;
-         }
-
-     </style>
 </head>
 <body>
 <div class="page-group">
@@ -65,10 +23,11 @@
             </a>
 
             <div class="pull-right top-nav">
-                <i class="iconfont">
-                    &#xe600;
-                </i>
-
+                <a href="./sign.html">
+                    <i class="iconfont">
+                        &#xe600;
+                    </i>
+                </a>
                 <i class="iconfont open-panel panel-right">
                     &#xe601;
                 </i>
@@ -84,8 +43,8 @@
                             <div class="item-inner">
 
                                 <div class="item-input" style="position: relative;">
-                                    <input type="text" placeholder="请输入手机号"   >
-                                    <div class="send">发送验证码 </div>
+                                    <input type="text" placeholder="请输入手机号">
+                                    <div class="send">发送验证码</div>
                                 </div>
                             </div>
                         </div>
@@ -127,6 +86,18 @@
             </div>
 
 
+        </div>
+    </div>
+    <!--弹出元素-->
+    <div class="panel panel-right panel-reveal main-page">
+        <div class="content-block">
+            <img class="user-pic" src="../images/broker_pic1.png" alt="">
+            <p><a href="./sign.html">登录</a></p>
+            <p><a href="./zhuce.html">注册</a></p>
+            <p><a href="">委托买房</a></p>
+            <p><a href="">委托卖房</a></p>
+            <!-- Click on link with "close-panel" class will close panel -->
+            <p><a href="javascript:;" class="close-panel">关闭</a></p>
         </div>
     </div>
 </div>
