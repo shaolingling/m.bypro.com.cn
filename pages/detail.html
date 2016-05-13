@@ -224,19 +224,7 @@
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
 <script src="http://api.map.baidu.com/api?v=2.0&ak=A5aa099470fadda93e89f07e6142b215" type="text/javascript"></script>
 
-<script>
+<script src="../js/event.js"></script>
 
-    $(function () {
-        var imgWidth = $("body").width();
-        $("#swiper img").height(imgWidth);
-        $("#swiper img").width(imgWidth);
-        $.init();
-
-        //baidu map api init
-        var mp = new BMap.Map('map');
-        mp.centerAndZoom(new BMap.Point(121.491, 31.233), 11);
-
-    })
-</script>
 </body>
 </html>
