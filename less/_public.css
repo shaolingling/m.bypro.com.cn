@@ -11,6 +11,15 @@
   font-size: 1.1rem;
   font-style: normal;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+  font-weight: 700 !important;
+}
 p {
   padding: 0;
   margin: 0;
@@ -161,6 +170,82 @@ footer {
 }
 footer img {
   width: 100%;
+}
+.list-wrap .list-item {
+  overflow: hidden;
+  padding: 0.6rem 0.5rem 0.75rem;
+  border-bottom: 1px dashed #d7d7d7;
+}
+.list-wrap .list-item a {
+  font-size: 0.5rem;
+  color: #999;
+  font-family: 'Microsoft Yahei';
+  display: block;
+}
+.list-wrap .list-item a .left {
+  float: left;
+  margin-right: 0.5rem;
+  width: 5rem;
+  height: 3.75rem;
+}
+.list-wrap .list-item a .left img {
+  width: 100%;
+  height: 100%;
+}
+.list-wrap .list-item a p:nth-of-type(1) {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #222;
+}
+.list-wrap .list-item a p {
+  position: relative;
+}
+.list-wrap .list-item a p .price {
+  position: absolute;
+  right: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #e7380d;
+}
+.list-wrap .list-item a p:last-of-type span {
+  border: 1px solid pink;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 2px;
+}
+.list-wrap .list-item a p:last-of-type .maner {
+  color: #049c6f;
+  border-color: #049c6f ;
+}
+.list-wrap .list-item a p:last-of-type .yaoshi {
+  color: #712096;
+  border-color: #712096 ;
+}
+.list-wrap .list-item a p:last-of-type .ditie {
+  color: #ec4731;
+  border-color: #ec4731 ;
+}
+#info-wrap {
+  background: #ffffff;
+  font-size: 0.6rem;
+  padding: 0.5rem;
+  outline: 1px solid #e3e3e3;
+  margin-bottom: 0.75rem;
+}
+#info-wrap .row {
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 1.6rem;
+}
+.decription-info {
+  background: #ffffff;
+  font-size: 0.6rem;
+  padding: 0.5rem;
+  outline: 1px solid #e3e3e3;
+  margin-bottom: 0.75rem;
+}
+.decription-info p:nth-of-type(odd) {
+  color: #f26539;
 }
 /* 弹出元素 */
 .panel {

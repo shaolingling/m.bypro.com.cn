@@ -9,40 +9,18 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
-    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
-    <link rel="stylesheet" href="../less/detail.css">
 
-    <style>
-        .list-block {
-            margin: 0;
-        }
+    <link rel="stylesheet" href="../sui/dist/css/sm.css">
+    <link rel="stylesheet" href="../sui/dist/css/sm-extend.css">
+    <link rel="stylesheet" href="../less/main.css">
 
-        .swiper-container {
-            width: 100%;
-            /*height: 300px;*/
-        }
-
-        .swiper-slide img {
-            width: 100%;
-        }
-
-        .content {
-            /*background: #fff;*/
-        }
-
-        .bar-tab {
-            z-index: 999;
-            height: 3rem;
-        }
-    </style>
 </head>
 <body>
 
 
 <div class="page-group">
 
-    <div class="page  page-current">
+    <div class="page  page-current" id="details">
         <header class="bar bar-nav">
             <a href="main.html" class="logo">
                 <img src="../images/logo-icon.png" alt="">
@@ -56,9 +34,10 @@
                 </i>
             </div>
         </header>
+
         <div class="content">
             <!-- Slider -->
-            <div class="swiper-container">
+            <div class="swiper-container" id="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img
                             src="../images/details/ba7cd232-9475-4c23-8381-cf68230941ac.jpg.600x450.jpg"
@@ -76,137 +55,121 @@
                 </div>
                 <div class="swiper-pagination swiper-pagination-bullets"></div>
             </div>
-            <div class="info-wrap">
-                <h3>超高性价比两房，高区全南中央空调地暖
-                    应有尽有
-                </h3>
-                <div class="content-padded grid-demo">
-                    <div class="row">
-                        <div class="col-25">售价</div>
-                        <div class="col-25">房型</div>
-                        <div class="col-25">面积</div>
-                        <div class="col-25">楼层</div>
+            <div class="grid-demo" id="info-wrap">
+                <p class="row">
+                <h1>超高性价比两房，高区全南中央空调地暖
+                    应有尽有</h1>
+                <i class="iconfont"></i>
+                </p>
+                <div class="row">
+                    <div class="col-25">
+                        <p>售价</p>
+                        <p>720万</p>
+                    </div>
+                    <div class="col-25">
+                        <p>房型</p>
+                        <p>2室2厅</p>
+                    </div>
+                    <div class="col-25">
+                        <p>面积</p>
+                        <p>117㎡</p>
+                    </div>
+                    <div class="col-25">
+                        <p>楼层</p>
+                        <p>低层/33</p>
                     </div>
                 </div>
-                <div class="basic-info list-block">
-                    <ul>
-                        <li class="item-content">
-                            <div class="item-media">小区：</div>
-                            <div class="item-inner">
-                                <div class="item-title">凯欣豪园</div>
-                                <div class="item-after"></div>
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">单价：</div>
-                            <div class="item-inner">
-                                <div class="item-title">300万</div>
-                                <div class="item-after">首付：100万</div>
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">楼型：</div>
-                            <div class="item-inner">
-                                <div class="item-title">1万</div>
-                                <div class="item-after">
-                                    朝向：南北
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">装修：</div>
-                            <div class="item-inner">
-                                <div class="item-title">精装</div>
-                                <div class="item-after">
-                                    年代：2001年
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item-content">
-                            <div class="item-media">地铁：</div>
-                            <div class="item-inner">
-                                <div class="item-title">3号线</div>
-                                <div class="item-after">
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="property-decription">
-                        <div class="content-block-title"><h2>房源描述</h2></div>
-                        <div class="list-block">
-                            <ul>
-                                <li class="item-content">
-                                    <div class="item-inner">
-                                        <h4>价格优势</h4>
-                                        <p>高层/33层，全南房型，采光无敌。</p>
-                                    </div>
-                                </li>
-                                <li class="item-content">
-                                    <div class="item-inner">
-                                        <h4>价格优势</h4>
-                                        <p>高层/33层，全南房型，采光无敌。</p>
-                                    </div>
-                                </li>
-                                <li class="item-content">
-                                    <div class="item-inner">
-                                        <h4>价格优势</h4>
-                                        <p>高层/33层，全南房型，采光无敌。</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="row">
+                    <div class="col-80">
+                        小区: <span>XX豪园</span>
+                    </div>
+                    <div class="col-20">
+                        详情 <span> > </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-80">
+                        单价: <span>3万</span>
+                    </div>
+                    <div>购房计算器</div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        首付: <span>216万</span>
+                    </div>
+                    <div class="col-50">
+                        月供: <span>24891元</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        楼型: <span>216万</span>
+                    </div>
+                    <div class="col-50">
+                        朝向: <span>24891元</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        装修: <span>216万</span>
+                    </div>
+                    <div class="col-50">
+                        年代: <span>24891元</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100">
+                        地铁: <span>XX豪园</span>
                     </div>
 
-                    <div class="list-block">
-                        <ul>
-                            <li class="item-content item-link">
-                                <div class="item-media"><i class="icon icon-f7"></i></div>
-                                <div class="item-inner">
-                                    <div class="item-title">同小区房源</div>
-                                    <div class="item-after">1套符合条件房源</div>
-                                </div>
-                            </li>
-                            <li class="item-content item-link">
-                                <div class="item-media"><i class="icon icon-f7"></i></div>
-                                <div class="item-inner">
-                                    <div class="item-title">同价房源</div>
-                                    <div class="item-after">0套符合条件房源</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
 
-                    <div class="list-block">
-                        <ul>
-                            <li class="item-content item-link">
-                                <div class="item-media"><i class="icon icon-f7"></i></div>
-                                <div class="item-inner">
-                                    <div class="item-title">客户看房记录</div>
-                                    <div class="item-after">好评(18)</div>
-                                </div>
-                            </li>
-                            <li class="item-content">
-                                <div class="item-media"><i class="icon icon-f7"></i></div>
-                                <div class="item-inner">
-                                    <div class="item-title">近一月新增28位看房客户，共199位</div>
-                                    <!--<div class="item-after">0套符合条件房源</div>-->
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="map">
-
-                    </div>
+            </div>
+            <div class="grid-demo decription-info">
+                <h1>
+                    房源描述
+                </h1>
+                <div>
+                    <p>价格优势</p>
+                    <p>高层/33层，全南房型，采光无敌。</p>
+                    <p>价格优势</p>
+                    <p>高层/33层，全南房型，采光无敌。</p>
+                    <p>价格优势</p>
+                    <p>高层/33层，全南房型，采光无敌。</p>
                 </div>
             </div>
 
+            <div class="grid-demo decription-info">
+                <p class="row">
+                    <div>
+                        同小区房源 <span>1套房源符合条件</span>
+                    </div>
 
+                </p>
+                <p class="row">
+                    <div>
+                        同小区房源 <span>1套房源符合条件</span>
+                    </div>
+
+                </p>
+            </div>
+            <div class="grid-demo decription-info">
+                <p class="row">
+                <div>
+                    客户看房记录 <span>1套房源符合条件</span>
+                </div>
+
+                </p>
+                <p class="row">
+                <div>
+                    近一个月新增 <span>28</span>位看房客户，共span
+                </div>
+
+                </p>
+            </div>
         </div>
 
-        <nav class="bar bar-tab">
+        <nav class="bar bar-tab" style="display: none;">
             <a class="tab-item external active" href="#">
                 <img class="user-pic" src="../images/broker_pic1.png" alt="" style="height: 3rem">
 
@@ -226,7 +189,6 @@
         </nav>
 
 
-
     </div>
     <!--弹出元素-->
     <div class="panel panel-right panel-reveal main-page">
@@ -244,16 +206,15 @@
 <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
-<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+
 <script>
+
     $(function () {
-        var config = {
-            direction: 'horizontal',
-            loop: true,
-            paginationHide: true
-        }
-        $(".swiper-container").swiper(config);
-    });
+        var imgWidth = $("body").width();
+        $("#swiper img").height(imgWidth);
+        $("#swiper img").width(imgWidth);
+        $.init();
+    })
 </script>
 </body>
 </html>
